@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  couchdb_3_2:
+    image: couchdb_3_2
+    build: couchdb_3_2
+    container_name: couchdb_3_2
+    hostname: couchdb_3_2
+    # ports:
+      # - 5984:5984
+    environment:
+      - COUCHDB_USER=admin
+      - COUCHDB_PASSWORD=rahasia      
+    networks:
+      - devnetwork  
+    # volumes:
+        # - fgtafsdata:/opt/couchdb/data  
+
+networks:
+  devnetwork:
+    name: devnetwork
+    external: true        
