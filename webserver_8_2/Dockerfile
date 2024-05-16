@@ -20,6 +20,7 @@ RUN apt-get install -y nano
 RUN apt-get install -y inetutils-ping
 RUN apt-get install -y nmap
 RUN apt-get install -y telnet
+RUN apt-get install -y unzip
 
 
 ### Use membacached as session management
@@ -36,6 +37,7 @@ RUN apt-get install -y telnet
 RUN install-php-extensions pdo_dblib
 RUN install-php-extensions pdo_firebird
 RUN install-php-extensions pdo_mysql
+RUN install-php-extensions pdo_pgsql
 RUN install-php-extensions mysqli
 RUN install-php-extensions xdebug
 RUN install-php-extensions zip
