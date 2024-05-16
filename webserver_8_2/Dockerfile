@@ -21,6 +21,7 @@ RUN apt-get install -y inetutils-ping
 RUN apt-get install -y nmap
 RUN apt-get install -y telnet
 RUN apt-get install -y unzip
+RUN apt-get install -y git
 
 
 
