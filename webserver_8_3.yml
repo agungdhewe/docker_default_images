@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  webserver_8_3:
+    image: webserver_8_3 
+    build: webserver_8_3
+    container_name: webserver_8_3
+    hostname: webserver_8_3
+    ports:
+    - 8000:80
+    networks:
+      - devnetwork 
+    working_dir: /var/www/html
+
+networks:
+  devnetwork:
+    name: devnetwork
+    external: true
+
