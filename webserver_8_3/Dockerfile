@@ -3,8 +3,8 @@ ENV TERM=xterm-256color
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-COPY startup.sh /usr/local/bin
-RUN chmod -v +x /usr/local/bin/startup.sh
+#COPY startup.sh /usr/local/bin
+#RUN chmod -v +x /usr/local/bin/startup.sh
 
 COPY .bashrc /root/.bashrc
 
